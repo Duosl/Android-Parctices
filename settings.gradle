@@ -1,0 +1,7 @@
+include ':app', ':java_base', ':android_base', ':custom_view_and_animation', ':thread_pool', ':java_annotation', ':java_design_patter', ':retrofitdemo', ':activity_lifecycle_demo', ':okhttp_mt_demo'
+//加入下面配置
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+        settingsDir.parentFile,
+        'my_flutter/.android/include_flutter.groovy'
+))
